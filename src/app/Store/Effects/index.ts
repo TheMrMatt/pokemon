@@ -1,0 +1,1 @@
+export { PokeEffects } from './pokemon.effects'

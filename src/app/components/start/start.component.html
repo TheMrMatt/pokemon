@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div class="wrapp">
+        <div class="primer-wrap">
+            <img src="../../../assets/images/68747470733a2f2f692e696d6775722e636f6d2f583962314b75362e706e67.png" alt=""
+                class="imgp">
+        </div>
+
+        <div class="second-wrap">
+            <h2>Selecciona una dificultad</h2>
+            <div class="buttonWrap">
+                <button color="primary" mat-raised-button (click)="setDificultadF()" class="but-d">Facil</button>
+                <button color="primary" mat-raised-button (click)="setDificultadM()" class="but-d">Medio</button>
+                <button color="primary" mat-raised-button (click)="setDificultadD()" class="but-d">Dificil</button>
+                <button color="primary" mat-raised-button (click)="setDificultadE()" class="but-d">Extremo</button>
+            </div>
+        </div>
+
+        <div class="tercer-wrap">
+            <h3> Facil: Solo pueden salir pokemon de la primera generacion <br>
+                Medio: Pueden salir pokemon de la primera y segunda generacion <br>
+                Dificil: Pueden salir pokemon de la primera, segunda y tercera generacion <br>
+                Extremo: Pueden salir pokemon de todas las generaciones <br>
+            </h3>
+            <button color="primary" disabled='{{bandera ? false : true}}' mat-raised-button (click)="toggleStartGame()"
+                class="but-d"> start </button>
+        </div>
+
+    </div>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" class="icon" (click)="openAbout()">help outline
+    </mat-icon>
+</div>

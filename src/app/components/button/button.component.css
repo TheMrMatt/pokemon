@@ -1,0 +1,48 @@
+
+
+.butt:disabled {
+    background-color: #cccccc;
+    color: #666666;
+}
+
+@media (min-width: 320px) {
+
+    .butt {
+        width: 150px;
+        height: 50px;
+        
+        text-decoration: none;
+        border: none;
+        font-size: 22px;
+        
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .butt {
+        width: 200px;
+        height: 50px;
+        
+        text-decoration: none;
+        border: none;
+        font-size: 22px;
+        
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+  
+    .butt {
+        width: 200px;
+        height: 50px;
+        
+        text-decoration: none;
+        border: none;
+        font-size: 22px;
+        
+    }
+}

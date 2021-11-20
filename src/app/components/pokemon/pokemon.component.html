@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="intentos-wrap">
+        <div class="wrapp">
+            <app-intentos-visual color="{{intentos[0] ? 'green':'red'}}"></app-intentos-visual>
+            <app-intentos-visual color="{{intentos[1] ? 'green':'red'}}"></app-intentos-visual>
+            <app-intentos-visual color="{{intentos[2] ? 'green':'red'}}"></app-intentos-visual>
+        </div>
+    </div>
+
+    <div class="wraprow">
+
+        <div *ngIf="!b" class="box" style="background-color: black; -webkit-mask: url({{pokemon.sprites.front_default}}) center/contain no-repeat; mask:url({{pokemon.sprites.front_default}}) center/contain no-repeat; 
+                background: url({{pokemon.sprites.front_default}}) center/contain no-repeat">
+        </div>
+
+        <div *ngIf="b" class="box-true" style=" -webkit-mask: url({{pokemon.sprites.front_default}}) center/contain no-repeat; mask:url({{pokemon.sprites.front_default}}) center/contain no-repeat; 
+                background: url({{pokemon.sprites.front_default}}) center/contain no-repeat">
+        </div>
+
+    </div>
+
+
+    <div class="wrap">
+        <form [formGroup]="form" class="form">
+            <mat-form-field appearance="fill" class="input-c">
+                <mat-label style="color: black;">que pokemon es?</mat-label>
+                <input formControlName="pokemonName" matInput placeholder="Ex. Pikachu" type="text" name="text"
+                    id="text" class="input" [(ngModel)]="text" #search>
+
+                <mat-error *ngIf="this.form.controls.pokemonName.hasError('required')">Ingresa un pokemon
+                </mat-error>
+            </mat-form-field>
+        </form>
+        <div *ngIf="error" class="error">Vuelve a intentarlo</div>
+        <app-button (click)="comparar()" text="{{'Continuar'}}"></app-button>
+    </div>
+
+    <div class="wraprow2">
+        <button (click)="JugarDeNuevo()" color="primary" mat-raised-button disabled='{{b ? false : true}}'
+            class="but-d">Jugar
+            de
+            nuevo</button>
+
+        <span style="width: 50px;"></span>
+        <button (click)="Volver()" color="primary" mat-raised-button class="but-d">Volver al
+            inicio</button>
+    </div>
+
+</div>

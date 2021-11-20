@@ -1,0 +1,21 @@
+<div class="container">
+    <h2 *ngIf="estado">Intenta otra vez!</h2>
+    <h2 *ngIf="!estado">Felicidades has adivinado!</h2>
+    <div class="pokemon">
+        <img src="{{url}}" alt="" class="pokemon-img">
+    </div>
+    <div class="info-wrap">
+        <h2>Nombre</h2>
+        <h3 class="nombre">
+            {{name}}
+        </h3>
+        <h2>tipo</h2>
+        <h3 class="nombre">
+            {{tipo}}
+        </h3>
+    </div>
+    <div class="button-wrap">
+        <button color="primary" mat-raised-button mat-dialog-close class="but-d">Volver</button>
+    </div>
+
+</div>
