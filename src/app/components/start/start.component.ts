@@ -55,7 +55,7 @@ export class StartComponent implements OnInit {
   toggleStartGame() {
 
     this.router.navigate(['/pokemon'])
-    console.log('pokemon:::', this.pokemon);
+
   }
 
   openAbout() {

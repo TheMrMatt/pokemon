@@ -14,7 +14,7 @@ export class PokemonService {
   getPokemon(numb: number) {
     const number: Number = Math.floor(Math.random() * (numb - 1 + 1) + 1);
 
-    console.log('adasdawd', numb);
+
 
     return this.http.get(`${this.url}/${number}`)
   }

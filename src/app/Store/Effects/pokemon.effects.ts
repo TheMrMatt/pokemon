@@ -20,7 +20,7 @@ export class PokeEffects {
             exhaustMap(action =>
                 this.pokemonService.getPokemon(action.id).pipe(
                     map(response => {
-                        console.log("response::::", action)
+
 
                         return pokeActions.getPokemonSuccess({ response })
                     }),

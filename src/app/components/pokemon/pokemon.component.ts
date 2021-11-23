@@ -66,7 +66,7 @@ export class PokemonComponent implements OnInit {
 
       this.b = true;
       this.error = false;
-      console.log('condicion ', this.intento);
+
       const dialogRef = this.dialog.open(ModalComponent, {
         width: '400px',
         height: '600px',
@@ -86,7 +86,7 @@ export class PokemonComponent implements OnInit {
       this.intentos[this.intento] = false;
       this.intento++;
       if (this.intento === 3) {
-        console.log('true');
+
         this.b = true;
         const dialogRef = this.dialog.open(ModalComponent, {
           width: '400px',
@@ -100,13 +100,13 @@ export class PokemonComponent implements OnInit {
           panelClass: "modal-l"
         });
       } else {
-        console.log('false');
+
         this.b = false;
       }
 
       this.error = true;
       this.searchElement.nativeElement.focus();
-      console.log(this.pokemon.name.toLowerCase() == this.text.toLowerCase());
+
 
     }
 

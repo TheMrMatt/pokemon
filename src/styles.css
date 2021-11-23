@@ -12,6 +12,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     background-color: red;
 }
 
+.modal-about .mat-dialog-container{
+    
+}
+
 .mat-icon {
     width: 50px !important;
     height: 50px !important;
@@ -21,3 +25,52 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .material-icons {
     font-size: 50px;
 }
+
+@media (min-width: 320px) {
+
+    .modal-l .mat-dialog-container{
+        width: 80% !important;
+    }
+
+    .modal-w .mat-dialog-container{
+        width: 80% !important;
+    }
+
+    .modal-about .mat-dialog-container{
+        width: 80% !important;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .modal-l .mat-dialog-container{
+        width: 400px;
+    }
+
+    .modal-w .mat-dialog-container{
+        width: 400px;
+    }
+
+    .modal-about .mat-dialog-container{
+        width: 400px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+
+    .modal-l .mat-dialog-container{
+        width: 400px;
+    }
+
+    .modal-w .mat-dialog-container{
+        width: 400px;
+    }
+
+    .modal-about .mat-dialog-container{
+        width: 400px;
+    }
+
+}   

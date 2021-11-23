@@ -19,7 +19,7 @@ export class IntentosService {
 
 
   getIntentos() {
-    console.log('addaw', this.intentos);
+
 
     if (this.intentos === 3) {
       return true;
